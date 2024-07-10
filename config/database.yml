@@ -13,20 +13,20 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
+  username: rails
+  password: myrailsdb
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: messing_up_enterprise_development
+  database: development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: messing_up_enterprise_test
+  database: test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: messing_up_enterprise_production
-  username: messing_up_enterprise
-  password: <%= ENV["MESSING_UP_ENTERPRISE_DATABASE_PASSWORD"] %>
+  database: production
+  username: rails
+  password: myrailsdb
+
