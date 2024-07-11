@@ -1,0 +1,445 @@
+/* Begin HomePage CSS */
+/* Begin Header and Nav Section */
+
+body {
+    margin: 0%;
+}
+
+#NavMenu {
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B3E9B;
+}
+
+#NavLogo {
+  width: 5%;
+  align-content: center;
+  vertical-align: middle;
+}
+  
+#NavMenu p {
+  padding-left: 20%;
+  margin: auto;
+  text-align: center;
+  display:inline-block;
+  font-size: xx-large;
+  color: #fff;
+  float:unset;
+}
+
+li {
+  float:right;
+} 
+  
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+  
+li a:hover {
+  color: #25B9BF;
+}
+/* End Header and Nav Section */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Begin Gallary Section */
+
+#slideshow-container {
+  display: flex;
+  max-width:max-content;
+  position: relative;
+  margin: auto;
+  height: 300px;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* End Gallary Section */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* Begin Services Section */
+#Services-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+  
+#Services\ left, #Services\ middle, #Services\ right {
+  flex:content;
+  text-align: center;
+  position: relative;
+  height: auto;
+  width: 300px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 50px;
+  background-color: #425698d6;
+  justify-content: center;
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Services\ left:hover, #Services\ middle:hover, #Services\ right:hover {
+  transform: translateY(-5px);
+}
+
+#Services\ left img,#Services\ middle img, #Services\ right img{
+  width: 100px;
+  height: 100px;
+}
+
+  /* End Services Section */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* Get Started Section  */
+#ContactUs-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+
+#ContactUs-Box {
+  width: 1320px;
+  height: 180px;
+  padding: 20px;
+  background-color:#3B3E9B;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+}
+
+#ContactUs-Box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 70px;
+  width: 300px;
+  font-size: x-large;
+  border-radius: 30px;
+  border:2.5px solid #000;
+}
+
+#Semibox\ left:hover {
+background-color: #7e83ff;
+}
+
+#Semibox\ right:hover {
+  background-color:#7e83ff;
+}
+/* End Get Started Section */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Begin Footer Section */
+  
+footer {
+  padding: 1%;
+  color: white;
+  background-color: teal;
+}
+
+/* End Footer Section */
+
+/* End HomePage CSS */
+
+/* Being Service Page CSS */
+
+
+
+/* End Service Page CSS */
+
+/* Begin About Us Section */
+
+#VisionSection {
+  padding: 20px;
+}
+
+#VisionContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+#VisionPicture {
+  display: flex;
+  justify-content: left;
+  width: 350px;
+  height: 200px;
+  border-radius: 25px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+#VisionPicture img {
+  width: initial;
+  height: initial;
+  object-fit: contain;
+}
+
+#VisionText {
+  justify-content: center;
+  text-align: center;
+}
+
+#GoalSection {
+  padding: 20px;
+}
+
+#GoalContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+#GoalPicture {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 200px;
+  border-radius: 25px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+#GoalText {
+  justify-content: center;
+  text-align: center;
+}
+
+#GoalPicture img {
+  width: initial;
+  height: initial;
+  object-fit: contain;
+}
+
+/* Begin Contact Us Section */
+
+#Section1-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+#Contact-Image-Container {
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100px;
+    
+}
+
+#Contact-Image-Container img {
+    object-fit: cover;
+}
+
+#Overlay-Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%,-50%);
+
+}
+
+#RegistrationContainer {
+    padding: 10%;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.879);
+}
+
+#Contact-Information {
+    float: left;
+    flex: 1;
+    padding: 40px;
+    background: #3B3E9B;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 2px solid var(--primary-color);
+}
+
+#registration-form form {
+    max-width: 800px;
+    margin: 0;
+    padding: 40px;
+    background: #3B3E9B;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    border-top: 2px solid var(--primary-color);
+}
+
+#registration-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#registration-form input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-left: 1px solid #25B9BF;
+    border-radius: 5px;
+    background: var(--body-dark-color);
+    color: var(--text-color);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+#registration-form label {
+    color: var(--text-color);
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: var(--font-weight-light);
+    
+}
+
+#Contact-Information p {
+    padding: 23px;
+    text-align: left;
+}
+
+  /* End Contact Us Section */
+
+  /* Footer */
+
+footer {
+    background-color: #3B3E9B;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: fit-content;
+    display: flex;
+}
+
+#FooterMainInfo {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ /* End Footer */
+
+/* Login Page */
+
+#LoginContainer {
+  text-align: center;
+  font-size: 60px;
+}
+
+#CustomerLogin {
+  align-items: center;
+  display: flex;
+  position: relative;
+  background-color:#3B3E9B;
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 11%;
+}
+
+#CustomerLogin div {
+  margin: auto;
+  display: flex;
+  text-align: left;
+}
+
+#LoginFields {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 15px;
+  background: #3B3E9B;
+  border-radius: 20px;
+}
+
+#LoginFields input {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background: var(--body-dark-color);
+  border-left: 1px solid #25B9BF;
+  color: white
+  
+}
+
+#LoginFields label {
+  color: white;
+  font-size: larger;
+}
+
+#CustomerLogin button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: auto;
+  align-items: center;
+  border-radius: 10px;
+  font-size: x-large;
+  background-color: #60ccf6;
+  
+}
