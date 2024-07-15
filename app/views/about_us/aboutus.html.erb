@@ -9,26 +9,26 @@
 <main>
     <nav>
         <ul id="NavMenu">
-            <img id="NavLogo" src="/imgs/Messingup.svg" alt="Quantum Networks">
+            <img id="NavLogo" src="<%= asset_path 'Messingup.svg' %>" alt="Quantum Networks">
             <p>Messing Up Enterprise</p>
-            <li><a href="login.html">Customer Login</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><%= link_to 'Customer Login', login_path %></li>
+            <li><%= link_to 'Contact Us', contactus_path %></li>
+            <li><%= link_to 'About Us', aboutus_path %></li>
+            <li><%= link_to 'Services', services_path %></li>
+            <li><%= link_to 'Home', root_path %></li>
         </ul>   
     </nav>
 </main>
 <section id="Section1-Container">
     <div id="Contact-Image-Container">
-        <img src="/imgs/aboutus.jpeg" alt="Contact Us">
+        <img src="<%= asset_path 'aboutus.jpeg' %>" alt="Contact Us">
         <div id="Overlay-Text">About Us</div>
     </div>
 </section>
 <section id="VisionSection">
     <div id="VisionContainer">
         <div id="VisionPicture">
-            <img src="/imgs/consultjpeg.jpeg" alt="">
+            <img src="<%= asset_path 'consultjpeg.jpeg' %>" alt="">
         </div>
         <div id="VisionText">
             <H1>Our Vision</H1>
@@ -43,7 +43,7 @@
             <p>Our Goal is to ....</p>
         </div>
         <div id="GoalPicture">
-            <img src="/imgs/goal.png" alt="Goals">
+            <img src="<%= asset_path 'goal.png' %>" alt="Goals">
         </div>
     </div>
 </section>
