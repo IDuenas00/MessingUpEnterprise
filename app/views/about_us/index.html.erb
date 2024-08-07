@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messing Up Enterprise</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/x-icon" href="imgs/Messingup.svg">
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'validation' %>
+</head>
+<body>
+<section id="Section1-Container">
+    <div id="Contact-Image-Container">
+        <img src="<%= asset_path 'aboutus.jpeg' %>" alt="Contact Us">
+        <div id="Overlay-Text">About Us</div>
+    </div>
+</section>
+<section id="VisionSection">
+    <div id="VisionContainer">
+        <div id="VisionPicture">
+            <img src="<%= asset_path 'consultjpeg.jpeg' %>" alt="">
+        </div>
+        <div id="VisionText">
+            <H1>Our Vision</H1>
+            <p>Get to know our vision</p>
+        </div>
+    </div>
+</section>
+<section id="GoalSection">
+    <div id="GoalContainer">
+        <div id="GoalText">
+            <h1>Our Goals</h1>
+            <p>Our Goal is to ....</p>
+        </div>
+        <div id="GoalPicture">
+            <img src="<%= asset_path 'goal.png' %>" alt="Goals">
+        </div>
+    </div>
+</section>
+</body>
+</html>
