@@ -49,4 +49,5 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  url: <%= ENV["STACKHERO_MARIADB_DATABASE_URL"] %> 
+  <<: *default
+  url: <%= ENV["STACKHERO_MARIADB_DATABASE_URL_RUBY"] %> 
