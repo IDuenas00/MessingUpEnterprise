@@ -50,4 +50,4 @@ test:
 #
 production:
   <<: *default
-     url: <%= ENV["mysql://root:XMIdmkPxiOfVzYFoiuzwVvTF777c5MyC@if3808.stackhero-network.com:7761/root?useSSL=true&requireSSL=true"] %> 
+     url: <%= ENV["STACKHERO_MARIADB_DATABASE_URL"] %> 
