@@ -50,6 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: messing_up_enterprise_production
-  username: rails
-  password: railsuck
+     url: <%= ENV["mysql://root:XMIdmkPxiOfVzYFoiuzwVvTF777c5MyC@if3808.stackhero-network.com:7761/root?useSSL=true&requireSSL=true"] %> 
