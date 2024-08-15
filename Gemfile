@@ -9,7 +9,7 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 gem "sprockets-rails"
 
 # Use mysql as the database for Active Record
-gem "mysql2", ">= 0.4.4"
+gem "mysql2", ">= 0.5"
 
 # bcrypt for password encryption
 gem "bcrypt", "~> 3.1.7"
