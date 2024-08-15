@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messing Up Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/Messingup.svg">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="LoginContainer">
+    <p>Customer Login</p>
+</div>
+<div id="CustomerLogin">
+    <div>
+    <%= form_with(url: login_path, local: true, scope: :session) do |form| %>
+        <div id="LoginFields">
+            <label for="session_email">Email</label>
+            <%= form.email_field :email, id: 'session_email', placeholder: "Email", required: true %>
+        </div>
+        <div id="LoginFields">
+            <label for="session_password">Password</label>
+            <%= form.password_field :password, id: 'session_password', placeholder: "Password", required: true %>
+        </div>
+        <%= form.submit "Login", id: "submit" %>
+    <% end %>
+    </div>
+</div>
+</body>
+</html>

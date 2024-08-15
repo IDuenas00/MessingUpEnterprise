@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messing Up Enterprise</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/x-icon" href="imgs/Messingup.svg">
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'validation' %>
+</head>
+<body>
+<section id="Section1-Container">
+    <div id="Contact-Image-Container">
+        <img src="<%= asset_path 'contactus.jpg' %>" alt="Contact Us">
+        <div id="Overlay-Text">Contact Us</div>
+    </div>
+</section>
+<Section id="RegistrationContainer">
+    <div>
+        <div id="Contact-Information">
+            <h2>Seeking Assistance?</h2>
+            <p>Email: support@mestup.corp</p>
+            <p>Phone Number: 812-231-3123</p>
+            <p>Location: 1232 Forest Hills Dr., Pasadena CA 91232</p>
+ 
+        </div>
+        <div id="registration-form">
+            <%= form_with model: @registration, url: register_path, method: :post, local: true, onsubmit: "return validateForm()" do |f| %>
+                <div id="form-group">
+                    <label for="F_Name">Your First Name</label>
+                    <%= f.text_field :first_name, id: "F_Name", placeholder: "First Name", required: true %>
+                </div>
+                <div id="form-group">
+                    <label for="L_Name">Your Last Name</label>
+                    <%= f.text_field :last_name, id: "L_Name", placeholder: "Last Name", required: true %>
+                </div>
+                <div id="form-group">
+                    <label for="email">Your Email</label>
+                    <%= f.email_field :email, id: "email", placeholder: "Email", required: true %>
+                </div>
+                <div id="form-group">
+                    <label for="phone">Your Number</label>
+                    <%= f.telephone_field :phone, id: "number", placeholder: "+1 (123) 456-6890", pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}", required: true %>
+                </div>
+                <div id="form-group">
+                    <label for="pwd">Your Password</label>
+                    <%= f.password_field :password, id: "pwd", required: true %>
+                </div>
+                <div id="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <%= f.password_field :password_confirmation, id: "confirm_password", required: true %>
+                </div>
+                <button type="submit" id="submit" value="submit">Submit Form</button>
+            <% end %>
+        </div>
+    </div>
+</Section>
+</body>
+</html>

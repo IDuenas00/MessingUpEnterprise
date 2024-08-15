@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messing Up Enterprise</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/x-icon" href="imgs/Messingup.svg">
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'validation' %>
+</head>
+<body>
+<section id="Gallery">
+    <div class="slideshow-container">
+        <div>
+        <img src="<%= asset_path 'consult.jpg' %>" alt="Consult" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+</section>
+<section id="Services-Container">
+    <div id="Services left">
+        <img src="<%= asset_path 'infrastructure.png' %>" alt="InfrastructureConsult">
+        <h1>Infrastructure Consulation</h1>
+        <p>"Enhance your business operations with our expert infrastructure consultation services, tailored to meet your unique needs and drive efficiency."</p>
+    </div>
+    <div id="Services middle">
+        <img src="<%= asset_path 'cyber-security.png' %>" alt="">
+        <h1>Cyber Security Solution</h1>
+        <p>"Protect your digital assets with our comprehensive cybersecurity solutions, ensuring robust defense against evolving threats."</p>
+    </div>
+    <div id="Services right">
+        <img src="<%= asset_path 'computer.png' %>" alt="">
+        <h1>Networking Solutions</h1>
+        <p>"Strengthen your connectivity with our comprehensive networking solutions, designed to ensure seamless and secure communication."</p>
+    </div>
+</section>
+<section id="ContactUs-Container">
+   <div id="ContactUs-Box">
+    <div id="Semibox left">Get Start With Us Today</div>
+    <div id="Semibox right">
+        <p>Contact Us</p>
+    </div>
+   </div>
+</section>
+</body>
+</html>

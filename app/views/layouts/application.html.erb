@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Messing Up Enterprise</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="icon" type="image/x-icon" href="imgs/Messingup.svg">
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'validation' %>
+</head>
+<body>
+  <% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+  <% end %>
+  <% if flash[:alert] %>
+    <p class="alert"><%= flash[:alert] %></p>
+  <% end %>
+
+  <main>
+    <nav>
+      <ul id="NavMenu">
+        <img id="NavLogo" src="<%= asset_path 'Messingup.svg' %>" alt="Quantum Networks">
+        <p>Messing Up Enterprise</p>
+        <% if session[:registration_id] %>
+          <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+          <li><%= link_to 'Dashboard', customerview_path %></li>
+        <% else %>
+          <li><%= link_to 'Login', login_path %></li>
+        <% end %>
+        <li><%= link_to 'Contact Us', contactus_path %></li>
+        <li><%= link_to 'About Us', aboutus_path %></li>
+        <li><%= link_to 'Services', service_path %></li>
+        <li><%= link_to 'Home', root_path %></li>
+      </ul>   
+    </nav>
+  </main>
+
+  <%= yield %>
+
+  <footer>
+    <div class="footer-content">
+      <div id="FooterMainInfo">
+        <h3>Messing Up Enterprise</h3>
+        <p>Email Us: Support@Mestup.org</p>
+        <p>Mail Us: 1232 Forest Hills Dr., Pasadena CA 91232</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
